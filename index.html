@@ -13,7 +13,9 @@
         <form action="" class="signin-form">
             <input type="text" class="signin-input" name="email" placeholder="Email" />
             <input type="password" class="signin-input" name="pass" placeholder="Password" />
-            <input type="checkbox" class="siginin-checkbox" /><span class="signin-rem">Remember me</span>
+            <div class="rm">
+                <input type="checkbox" class="siginin-checkbox" /><span class="signin-rem">Remember me</span>
+            </div>
 
             <button class="signin-btn">Login</button>
         </form>
@@ -70,7 +72,13 @@
     .signin-input::placeholder{
         color:  #FFFFFF;
     }
+    .rm{
+        display: flex;
+        align-items: center;
+    }
     .siginin-checkbox{
+        width: 18px;
+        height: 18px;
         border-radius: 5px;
         margin: 10px;
         accent-color: #810054;
