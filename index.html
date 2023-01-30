@@ -12,9 +12,14 @@
         <p class="signin-txt">Welcome to praava health api services</p>
         <form action="" class="signin-form">
             <input type="text" class="signin-input" name="email" placeholder="Email" />
-            <input type="password" class="signin-input" name="pass" placeholder="Password" />
-            <div class="rm">
-                <input type="checkbox" class="siginin-checkbox" /><span class="signin-rem">Remember me</span>
+            <input type="password" class="signin-input" name="pass" id="pass" placeholder="Password" />
+            <div class="signup-rm-pass">
+                <div class="rm">
+                    <input type="checkbox" class="siginin-checkbox" /><span class="signin-rem">Remember me</span>
+                </div>
+                <div class="rm">
+                    <input type="checkbox" class="siginin-checkbox" onclick="showPassword()" /><span class="signin-rem">Show Password</span>
+                </div>
             </div>
 
             <button class="signin-btn">Login</button>
@@ -72,6 +77,10 @@
     .signin-input::placeholder{
         color:  #FFFFFF;
     }
+    .signup-rm-pass{
+        display: flex;
+        justify-content: space-around;
+    }
     .rm{
         display: flex;
         align-items: center;
@@ -80,7 +89,7 @@
         width: 18px;
         height: 18px;
         border-radius: 5px;
-        margin: 10px;
+        margin: 5px;
         accent-color: #810054;
     }
     .signin-rem{
@@ -91,7 +100,7 @@
     }
     .signin-btn{
         text-align: center;
-        margin-top: 20px;
+        margin-top: 15px;
         width: 340px;
         height: 45px;
         font-size: 16px;
@@ -117,3 +126,13 @@
       overflow: hidden;
     }
 </style>
+<script>
+    function showPassword() {
+      var Pass = document.getElementById("pass");
+      if (Pass.type === "password") {
+        Pass.type = "text";
+      } else {
+        Pass.type = "password";
+      }
+    }
+</script>
