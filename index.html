@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
+    <link rel="shortcut icon" type="image/png" href="IMAGES/favicon.png">
+
 </head>
 <body>
     <div class="congtainer-signin-box">
@@ -33,6 +35,9 @@
       </footer>
 </body>
 </html>
+
+<!-- STYLE -->
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans&family=Work+Sans&display=swap');
     *{
@@ -126,12 +131,16 @@
       overflow: hidden;
     }
 </style>
+
+<!-- JAVASCRIPT -->
+
 <script>
     function showPassword() {
       var Pass = document.getElementById("pass");
       if (Pass.type === "password") {
         Pass.type = "text";
-      } else {
+      } 
+      else {
         Pass.type = "password";
       }
     }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="shortcut icon" type="image/png" href="../IMAGES/favicon.png">
+</head>
+<body>
+    <header class="header-user-dashboard">
+        <div class="search">
+            <input class="search-bar" type="text" placeholder="Search here...">
+        </div>
+        <div class="profile">
+            <a href="#"><img src="../IMAGES/ICONS/man.png" alt=""></a>
+        </div>
+    </header>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header-user-dashboard{
+        height: 45px;
+        background: #810085;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .search-bar{
+        height: 20px;
+        width: 400px;
+        padding: 5px;
+        border: none;
+        border-radius: 20px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .profile a img{
+        height: 40px;
+    }
+    @media screen and (max-width: 470px) {
+        .header-user-dashboard{
+            height: 100px;
+            flex-direction: column;
+        }      
+        .search-bar{
+            width: 100%;
+        }  
+    }
+</style>
