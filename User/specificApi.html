@@ -19,6 +19,53 @@
             <a href="#"><img src="../IMAGES/ICONS/man.png" alt=""></a>
         </div>
     </header>
+    <section class="gropu-section-specific">
+        <nav class="left-bar">
+            <ul>
+                <li><a href="">Doctors Api</a></li>
+                <li><a href="">Patient Api</a></li>
+            </ul>
+        </nav>
+        <div class="center-content">
+            <h3 class="api-content-header">Doctors Api</h3>
+            <p class="api-content-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam minus enim dolores sunt fuga modi quasi. Repudiandae ipsum vero, tenetur enim quia neque laborum sequi unde saepe dolor expedita?</p>
+
+            <div class="api-box">Lorem ipsum dolor sit amet, <span class="color">adipisicing elit.</span>  Eos hic eaque iure, <span class="color">consectetur</span> harum unde. Nostrum delectus nulla ea accusantium!</div>.
+
+            <div class="api-box">Lorem ipsum dolor sit amet, <span class="color">adipisicing elit.</span>  Eos hic eaque iure, <span class="color">consectetur</span> harum unde. Nostrum delectus nulla ea accusantium!</div>
+
+            <p class="api-content-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam minus enim dolores sunt fuga modi quasi. Repudiandae ipsum vero, tenetur enim quia neque laborum sequi unde saepe dolor expedita?</p>
+
+            <p class="api-content-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et, blanditiis corrupti perferendis cupiditate explicabo ducimus officia possimus doloribus omnis iusto minima illo cum sit! Eaque dolorum necessitatibus culpa nisi laborum laudantium iure alias odio veniam repudiandae cum libero iusto similique nihil, ipsam natus aliquam! Praesentium omnis pariatur at accusantium? Itaque saepe assumenda reprehenderit voluptates ducimus. Tenetur quasi tempore enim praesentium labore delectus dignissimos qui, voluptatem quo non. Beatae excepturi hic aut voluptatibus doloremque dolorum architecto eum laborum maiores fugiat adipisci non totam, dolores qui numquam labore esse deleniti aliquid! Quam temporibus est labore sed eos, harum obcaecati odit molestiae.</p>
+
+            <h3 class="api-content-header">Doctors Api</h3>
+
+            <p class="api-content-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, veritatis! Esse libero cupiditate cumque saepe, excepturi optio voluptatem ducimus nihil.</p>
+
+            <div class="api-box">Lorem ipsum dolor sit amet, <span class="color">adipisicing elit.</span>  Eos hic eaque iure, <span class="color">consectetur</span> harum unde. Nostrum delectus nulla ea accusantium!</div>
+
+            <p class="api-content-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, error!</p>
+            <div class="api-box">Lorem ipsum dolor sit amet, <span class="color">adipisicing elit.</span>  Eos hic eaque iure, <span class="color">consectetur</span> harum unde. Nostrum delectus nulla ea accusantium!</div>
+        </div>
+        <div class="right-content">
+            <h3 class="api-content-header">API</h3>
+            <div class="api-box">
+                method = <span class="color">"post"</span>;<br />
+                action = <span class="color">"/home"</span>;
+            </div>
+
+            <div class="api-box">
+                method = <span class="color">"post"</span>;<br />
+                action = <span class="color">"/home"</span>;<br />
+                method = <span class="color">"post"</span>;<br />
+                action = <span class="color">"/home"</span>;<br />
+                method = <span class="color">"post"</span>;<br />
+                action = <span class="color">"/home"</span>;
+                method = <span class="color">"post"</span>;<br />
+                action = <span class="color">"/home"</span>;
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>
@@ -49,6 +96,56 @@
     }
     .profile a img{
         height: 40px;
+    }
+    .gropu-section-specific{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    .left-bar{
+        padding: 30px;
+        border-right: 2px solid #810054;
+    }
+    .left-bar ul{
+        
+    }
+    .left-bar ul li {
+        margin-bottom: 5px;
+        list-style: none;
+        padding: 10px;
+    }
+    .left-bar ul li a{
+        text-decoration: none;
+        color: #810054;
+        font-size: 20px;
+    }
+    .center-content{
+        padding: 30px;
+    }
+    .api-content-header{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .api-content-txt{
+        margin-top: 20px;
+    }
+    .api-box{
+        margin-top: 20px;
+        width: 80%;
+        background: #e5e5e5;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+    .color{
+        color: #810054;
+    }
+    .right-content{
+        padding: 30px;
+        border-left: 3px solid #810054;
     }
     @media screen and (max-width: 670px) {
         .header{
