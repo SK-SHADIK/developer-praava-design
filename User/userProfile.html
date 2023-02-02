@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="shortcut icon" type="image/png" href="../IMAGES/favicon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../IMAGES/Praava-logo.png" alt="">
+        </div>
+        <div class="search">
+            <input class="search-bar" type="text" placeholder="Search here...">
+        </div>
+        <div class="profile">
+            <a href="#"><img src="../IMAGES/ICONS/man.png" alt=""></a>
+        </div>
+    </header>
+    <section class="user-profile">
+        <h3 class="user-profile-section-title">User Profile</h3>
+        <lavel class="user-profile-label">User Name</lavel><br /><input readonly type="text" name="name" id="" value="Praava Health" /><br />
+        <lavel class="user-profile-label">Email</lavel><br /><input readonly type="text" name="email" id="" value="info@praaavahealth" /><br />
+        <lavel class="user-profile-label">Phone Number</lavel><br /><input readonly type="text" name="phn" id="" value="+8801785468752" /><br />
+    </section>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        height: 45px;
+        background: #810054;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo img{
+        height: 40px;
+        width: 200px;
+    }
+    .search-bar{
+        height: 20px;
+        width: 400px;
+        padding: 5px;
+        border: none;
+        border-radius: 20px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .profile a img{
+        height: 40px;
+    }
+    .user-profile{
+        text-align: center;
+    }
+    .user-profile-section-title{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #810054;
+    }
+    .user-profile-label{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .user-profile input{
+        width: 300px;
+        height: 20px;
+        padding: 5px;
+        border: 2px solid #810054;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+
+    }
+    @media screen and (max-width: 670px) {
+        .header{
+            height: 130px;
+            flex-direction: column;
+        }    
+        .logo img{
+            width: 100%;
+        }  
+        .search-bar{
+            width: 100%;
+        }
+    }
+</style>
