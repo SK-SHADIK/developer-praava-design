@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specific API</title>
     <link rel="shortcut icon" type="image/png" href="../IMAGES/favicon.png">
+    <script src="https://kit.fontawesome.com/ec8ab4f226.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -22,7 +23,13 @@
     <section class="gropu-section-specific">
         <nav class="left-bar">
             <ul>
-                <li><a href="">Doctors Api</a></li>
+                <li><a href="">Doctors Api</a><i class="fas fa-chevron-down"></i>
+                    <ul class="dropdown">
+                        <li><a href="">Api</a></li>
+                        <li><a href="">Api</a></li>
+                        <li><a href="">Api</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Patient Api</a></li>
             </ul>
         </nav>
@@ -118,6 +125,17 @@
         text-decoration: none;
         color: #810054;
         font-size: 20px;
+    }
+    .left-bar ul li i{
+        float: right;
+        color: #810054;
+    }
+    .left-bar li .dropdown{
+        display: none;
+        border-left: 1px solid #810054;
+    }
+    .left-bar li:hover .dropdown{
+        display: block;
     }
     .center-content{
         padding: 30px;

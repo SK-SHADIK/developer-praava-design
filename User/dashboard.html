@@ -19,8 +19,15 @@
             <a href="#"><img src="../IMAGES/ICONS/man.png" alt=""></a>
         </div>
     </header>
-    <section class="section-boxes">
-        <a class="section-box" href="">Api Services</a>
+    <section class="gropu-section">
+        <nav class="left-bar">
+            <ul>
+                <li><a href="">Api Services</a></li>
+            </ul>
+        </nav>
+        <div class="section-boxes">          
+            <a class="section-box" href="">Api Services</a>
+         </div>
     </section>
 </body>
 </html>
@@ -52,10 +59,31 @@
     .profile a img{
         height: 40px;
     }
-    .section-boxes{
-        margin: 120px;
+    .gropu-section{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 6fr;
+    }
+    .left-bar{
+        margin: 30px;
+        border-right: 2px solid #810054;
+    }
+    .left-bar ul{
+        
+    }
+    .left-bar ul li {
+        margin-bottom: 5px;
+        list-style: none;
+        padding: 10px;
+    }
+    .left-bar ul li a{
+        text-decoration: none;
+        color: #810054;
+        font-size: 20px;
+    }
+    .section-boxes{
+        margin: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
     .section-box{
@@ -80,12 +108,24 @@
             grid-template-columns: repeat(3, 1fr);
             
         }
+        .gropu-section{
+            grid-template-columns: 1fr 3fr;
+       }
+        
+    }
+    @media screen and (max-width: 1420px) {
+        .section-boxes{
+            grid-template-columns: repeat(2, 1fr);
+        }
         
     }
     @media screen and (max-width: 1200px) {
         .section-boxes{
             grid-template-columns: repeat(2, 1fr);
             
+        }
+        .gropu-section{
+            grid-template-columns: 1fr 3fr;
         }
         
     }
@@ -95,6 +135,13 @@
             justify-content: center;
             grid-template-columns: repeat(1, 1fr);
             
+        }
+        .section-boxes{
+            grid-template-columns: repeat(1, 1fr);
+            
+        }
+        .gropu-section{
+            grid-template-columns: repeat(1, 1fr);
         }
         
     }
@@ -115,5 +162,4 @@
 
         }  
     }
-    
 </style>
