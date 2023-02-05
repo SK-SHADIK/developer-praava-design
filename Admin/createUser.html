@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <link rel="shortcut icon" type="image/png" href="../IMAGES/favicon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../IMAGES/Praava-logo.png" alt="">
+        </div>
+        <div class="search">
+            <input class="search-bar" type="text" placeholder="Search here...">
+        </div>
+        <div class="profile">
+            <a href="#"><img src="../IMAGES/ICONS/man.png" alt=""></a>
+        </div>
+    </header>
+    <section class="gropu-section">
+        <nav class="left-bar">
+            <ul>
+                <li><a href="">Api Services</a></li>
+                <li><a href="">Api Group</a></li>
+                <li><a href="">User Management</a></li>
+                <li><a href="">Role Management</a></li>
+                <li><a href="">Users</a></li>
+            </ul>
+        </nav>
+        <div class="section-forms"> 
+            <h3 class="Section-head-title">Create User</h3>
+
+            <form action="" class="section-form">
+                <label class="form-label">User Name</label><br />
+                <input type="text" placeholder="User Name" /> <br />
+
+                <label class="form-label">Email</label><br />
+                <input type="text" placeholder="Email" /> <br />
+
+                <label class="form-label">Phone</label><br />
+                <input type="text" placeholder="Phone" /> <br />
+
+                <label class="form-label">Role</label><br />
+                <select>
+                    <option value="">Select One...</option>
+                    <option value="General User">General User</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Viewer">Viewer</option>
+                    <option value="Commenter">Commenter</option>
+                </select>
+
+                <label class="form-label">Password</label><br />
+                <input type="password" placeholder="password" /> <br />
+                
+                <button class="btn-submit">Submit</button>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        height: 45px;
+        background: #810054;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo img{
+        height: 40px;
+        width: 200px;
+    }
+    .search-bar{
+        height: 20px;
+        width: 400px;
+        padding: 5px;
+        border: none;
+        border-radius: 20px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        border: 3px solid #810054;
+    }
+    .profile a img{
+        height: 40px;
+    }
+    .gropu-section{
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+    }
+    .left-bar{
+        margin: 30px;
+        border-right: 2px solid #810054;
+    }
+    .left-bar ul{
+        
+    }
+    .left-bar ul li {
+        margin-bottom: 5px;
+        list-style: none;
+        padding: 10px;
+    }
+    .left-bar ul li a{
+        text-decoration: none;
+        color: #810054;
+        font-size: 20px;
+    }
+    .left-bar ul li:hover{
+        border-left: 2px solid #810054;
+    }
+    .section-forms{
+        margin: 100px 100px 0px 300px;
+    }
+    .section-form{
+        width: 400px;
+        padding: 10px;
+    }
+    .Section-head-title{
+        margin-left: 30px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .form-label{
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px;
+    }
+    .section-form input, .section-form select{
+        width: 320px;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 20px;
+        letter-spacing: 1px;
+    }
+    .btn-submit{
+        background: #810054;
+        color: #fff;
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        border: 3px solid #810054;
+        border-radius: 10px;
+    }
+    .btn-submit:hover{
+        color: #810054;
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    @media screen and (max-width: 670px) {
+        .header{
+            height: 130px;
+            flex-direction: column;
+        }    
+        .logo img{
+            width: 100%;
+        }  
+        .search-bar{
+            width: 100%;
+        } 
+    }
+</style>
