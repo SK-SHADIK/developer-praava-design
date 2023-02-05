@@ -16,16 +16,40 @@
             <a href="./userProfile.html"><img src="../IMAGES/ICONS/man.png" alt=""></a>
         </div>
     </header>
+    <section class="section-slider">
+        <span></span>
+        <h3 class="slider-title">Welcome To Praava Health Api System</h3>
+        <p class="slider-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laudantium animi quaerat nihil, expedita et magni culpa nostrum ratione, aliquid vitae quos ducimus numquam! Itaque est minus architecto nobis iure!</p>
+
+        <button class="slider-btn">Api Services</button>
+    </section>
     <section class="gropu-section">
-        <nav class="left-bar">
-            <ul>
-                <li><a href="./apiGroup.html">Api Services</a></li>
-            </ul>
-        </nav>
         <div class="section-boxes">          
             <a class="section-box" href="./apiGroup.html">Api Services</a>
          </div>
     </section>
+    <!-- <footer class="footer">
+        <div class="about-us">
+            <h3 class="footer-title">About Us</h3>
+            <p class="footer-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla consequuntur, explicabo quae consequatur quas error veniam inventore corrupti a officia, vel aliquid doloribus consectetur molestiae expedita in, pariatur molestias numquam.</p>
+        </div>
+        <div class="privacy-policy">
+            <h3 class="footer-title">Privacy Policy</h3>
+            <p class="footer-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum ducimus illo sed, saepe nam fugit quod, unde minus incidunt molestias veniam itaque temporibus, tempore vel deserunt nulla explicabo nemo.</p>
+        </div>
+        <div class="quick-links">
+            <h3 class="footer-title">Quick Links</h3>
+            <nav class="left-bar">
+                <ul>
+                    <li><a href="./dashboard.html" style="color: #fff;">Home</a></li>
+                    <li><a href="./apiGroup.html" style="color: #fff;">Api Services</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-us">
+            <h3 class="footer-title">Contact Us</h3>
+        </div>
+    </footer> -->
 </body>
 </html>
 <style>
@@ -39,51 +63,45 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-bottom: 10px;
     }
     .logo img{
         height: 40px;
         width: 200px;
     }
-    .search-bar{
-        height: 20px;
-        width: 400px;
-        padding: 5px;
-        border: none;
-        border-radius: 20px;
-        letter-spacing: 1px;
-        font-size: 14px;
-    }
     .profile a img{
         height: 40px;
     }
-    .gropu-section{
-        display: grid;
-        grid-template-columns: 1fr 6fr;
+    .section-slider{
+        width: 100%;
+        height: 400px;
+        background: #810054;
+        text-align: center;
+        gap: 2px;
     }
-    .left-bar{
-        margin: 30px;
-        border-right: 2px solid #810054;
+    .slider-title{
+        padding-top: 100px;
+        font-size: 50px;
+        color: #fff;
     }
-    .left-bar ul{
-        
-    }
-    .left-bar ul li {
-        margin-bottom: 5px;
-        list-style: none;
-        padding: 10px;
-    }
-    .left-bar ul li a{
-        text-decoration: none;
-        color: #810054;
+    .slider-txt{
+        margin-top: 30px;
         font-size: 20px;
+        color: #ffffff85;
     }
-    .left-bar ul li:hover{
-        border-left: 2px solid #810054;
+    .slider-btn{
+        margin-top: 30px;
+        width: 200px;
+        height: 40px;
+        font-size: 25px;
+        color: #810054;
+        border: 3px solid #810054;
+        border-radius: 5px;
     }
     .section-boxes{
         margin: 100px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
     .Section-head-title{
@@ -92,7 +110,7 @@
         font-size: 40px;
     }
     .section-box{
-        background: #810054;
+        background: linear-gradient(to bottom, #810054, #810054c6);
         color: #fff;
         padding: 100px;
         border: 3px solid #810054;
@@ -107,6 +125,16 @@
         color: #810054;
         border-radius: 5px;
         transform: scale(1.0);
+    }
+    .footer{
+        background: #810054;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-title{
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
     }
     @media screen and (max-width: 1550px) {
         .section-boxes{
