@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="shortcut icon" type="image/png" href="../IMAGES/favicon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../IMAGES/Praava-logo.png" alt="">
+        </div>
+        <div class="search">
+            <input class="search-bar" type="text" placeholder="Search here...">
+        </div>
+        <div class="profile">
+            <a href="#"><img src="../IMAGES/ICONS/man.png" alt=""></a>
+        </div>
+    </header>
+    <section class="gropu-section">
+        <nav class="left-bar">
+            <ul>
+                <li><a href="">Api Services</a></li>
+                <li><a href="">Api Group</a></li>
+                <li><a href="">User Management</a></li>
+                <li><a href="">Role Management</a></li>
+                <li><a href="">Users</a></li>
+            </ul>
+        </nav>
+        <div class="section-tables">
+            <h3 class="Section-head-title">User Details</h3>
+            <div class="search-btn-flex">
+                <div class="search">
+                    <input class="search-bar" type="text" placeholder="Search here...">
+                </div> 
+                <div class="create-btn">
+                   <a href="">New User</a>
+                </div>
+            </div>
+            <table class="table">
+                <tr>
+                    <th>User Name</th>
+                    <th>User Id</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th colspan="2">Options</th>
+                </tr>
+                <tr>
+                    <td>Abc</td>
+                    <td>1</td>
+                    <td>abc@gmail.com</td>
+                    <td>017548569586</td>
+                    <td><a class="edit-btn" href="">Edit</a></td>
+                    <td><a class="delete-btn" href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Abc</td>
+                    <td>1</td>
+                    <td>abc@gmail.com</td>
+                    <td>017548569586</td>
+                    <td><a class="edit-btn" href="">Edit</a></td>
+                    <td><a class="delete-btn" href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Abc</td>
+                    <td>1</td>
+                    <td>abc@gmail.com</td>
+                    <td>017548569586</td>
+                    <td><a class="edit-btn" href="">Edit</a></td>
+                    <td><a class="delete-btn" href="">Delete</a></td>
+                </tr>
+                
+                
+            </table>          
+        </div>
+    </section>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        height: 45px;
+        background: #810054;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo img{
+        height: 40px;
+        width: 200px;
+    }
+    .search-bar{
+        height: 20px;
+        width: 400px;
+        padding: 5px;
+        border: none;
+        border-radius: 20px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        border: 3px solid #810054;
+    }
+    .profile a img{
+        height: 40px;
+    }
+    .gropu-section{
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+    }
+    .left-bar{
+        margin: 30px;
+        border-right: 2px solid #810054;
+    }
+    .left-bar ul{
+        
+    }
+    .left-bar ul li {
+        margin-bottom: 5px;
+        list-style: none;
+        padding: 10px;
+    }
+    .left-bar ul li a{
+        text-decoration: none;
+        color: #810054;
+        font-size: 20px;
+    }
+    .left-bar ul li:hover{
+        border-left: 2px solid #810054;
+    }
+    .search-btn-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Section-head-title{
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .create-btn{
+        float: right;
+        width: 150px;
+        height: 30px;
+        margin-bottom: 10px;
+        border: 3px solid #810054;
+        border-radius: 5px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .create-btn a{
+        text-decoration: none;
+        color: #810054;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .create-btn:hover{
+        border-radius: 10px;    
+    }    
+    .section-tables{
+        margin: 100px;
+    }
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .table td, .table th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    
+    .table tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+    
+    .table tr:hover {
+        background-color: #ddd;
+    }
+    
+    .table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: #810054;
+      color: white;
+    }
+    .edit-btn, .delete-btn{
+        text-decoration: none;
+        color: #810054;
+        font-size: 20px;
+    }
+    .edit-btn:hover, .delete-btn:hover{
+        color: #000;
+    }
+
+    @media screen and (max-width: 670px) {
+        .header{
+            height: 130px;
+            flex-direction: column;
+        }    
+        .logo img{
+            width: 100%;
+        }  
+        .search-bar{
+            width: 100%;
+        } 
+    }
+</style>
